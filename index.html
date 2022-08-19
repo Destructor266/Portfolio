@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Manel Jarrega">
+    <meta name="description" content="My portfolio for job interviews">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1 id="MyPortfolio">My portfolio</h1>
+    </header>
+
+    <nav>
+        <a href="#MyPortfolio" class="logo">
+            <img src="img/logo.png" alt="logo-img" width="150">
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="#Presentation"><p>Presentation</p></a></li>
+            <li><a href="#MyRepos"><p>My Repos</p></a></li>
+            <li><a href="#forms"><p>Contact</p></a></li>
+            
+        </ul>    
+    </nav>
+
+
+    <main>
+        <section id="Presentation">
+            <img src="img/Raiden.png" alt="MyImage">
+            <h2 class="Title">Welcome to my Portfolio!</h2>
+            <p>I'm Manel Jarrega, a student developer at Jesuites Clot with the dream to become a Game Developer</p>
+
+            <div class="cards">
+                <h3 class="SubTitle">Technologies:</h3>
+                <ul>
+                    <li id="Python">Python</li>
+                    <li id="C">C</li>
+                    <li id="HTML">HTML</li>
+                    <li id="CSS">CSS</li>
+                    <li id="UNIX">UNIX</li>
+                    <li id="Windows">Windows</li>
+                    <li id="MySQL">MySQL</li>
+                </ul>
+            </div>
+
+            <div class="cards">
+                <h3 class="SubTitle">Hobbies:</h3>
+                <ul>
+                    <li id="Videogames">Videogames</li>
+                    <li id="Series">Series</li>
+                </ul>
+            </div>
+
+            <button>Download CV</button>
+
+            <div class="cards">
+                <h2>My Social Networks</h2>
+                <div>
+                    <a href=""><img src="img/twitter-Mark.png" alt="Twitter" class="SocialNetwork"></a>
+                    <a href=""><img src="img/instagram-Mark.png" alt="Instagram" class="SocialNetwork"></a>
+                    <a href="https://github.com/Destructor266"><img src="img/GitHub-Mark.png" alt="Github" class="SocialNetwork"></a>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="MyRepos">
+            <h2 class="Title">My Repos</h2>
+            <article class="Repo">
+                <a href="https://github.com/Destructor266/RequestChuckNorrisAPI">
+                    <img src="img/chuck-norris610_ebeb.jpg" alt="RequestChuckNorrisAPI">
+                    <p class="TextRepo">RequestChuckNorrisAPI</p>
+                </a>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <h2 class="Title">Contact Me</h2>
+        <section id="forms">
+            <form action="form.php">
+                <label for="Email">Enter your email</label>
+                <input type="text" name="Email" id="EmailInput" required>
+                <textarea name="Message" id="MessageTextArea" cols="30" rows="10" required>Your message goes here</textarea>
+                <button>Submit</button>  
+            </form>  
+        </section>
+
+        <section id="authors">
+          <section>&copy; 2021 - Manel Jarrega</section>
+        </section>
+
+    </footer>
+
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>

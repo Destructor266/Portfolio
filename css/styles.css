@@ -1,0 +1,43 @@
+header{
+    text-align: center;
+    text-decoration: underline;
+}
+
+nav{
+    width: 150px;
+    height: 100%;
+    background-color: green;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 30px;
+}
+
+.logo{
+    display: block;
+    margin-bottom: 130px;
+}
+
+.logo-img{
+    width: 150px;
+}
+
+.nav-links{
+    list-style: none;
+    position: relative;
+    padding-left: 0px;
+}
+
+.nav-links li{
+    padding: 10px 0;
+}
+
+.nav-links li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.Title{
+    text-align: center;
+    text-decoration: underline;
+}
