@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,98 +10,101 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    
+
     <title>Portfolio</title>
 </head>
+
 <body>
     <header>
-        <h1 id="MyPortfolio">My portfolio</h1>
+        <div class="header-container">
+            <div id="TitleContainer">
+                <h1>My portfolio</h1>
+            </div>
+            <nav class="menu-wrapper">
+                <ul id="nav-links">
+                    <li><a href="#Presentation">Presentation</a></li>
+                    <li><a href="#MyRepos">My Repos</a></li>
+                    <li><a href="#forms">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <nav>
-        <a href="#MyPortfolio" class="logo">
-            <img src="img/logo.png" alt="logo-img" width="150">
-        </a>
-
-        <ul class="nav-links">
-            <li><a href="#Presentation"><p>Presentation</p></a></li>
-            <li><a href="#MyRepos"><p>My Repos</p></a></li>
-            <li><a href="#forms"><p>Contact</p></a></li>
-            
-        </ul>    
-    </nav>
-
-
-    <main>
-        <section id="Presentation">
-            <img src="img/Raiden.png" alt="MyImage">
+    <section id="Presentation">
+        <div class="PresentationHeader">
             <h2 class="Title">Welcome to my Portfolio!</h2>
             <p>I'm Manel Jarrega, a student developer at Jesuites Clot with the dream to become a Game Developer</p>
+        </div>
 
-            <div class="cards">
-                <h3 class="SubTitle">Technologies:</h3>
-                <ul>
-                    <li id="Python">Python</li>
-                    <li id="C">C</li>
-                    <li id="HTML">HTML</li>
-                    <li id="CSS">CSS</li>
-                    <li id="UNIX">UNIX</li>
-                    <li id="Windows">Windows</li>
-                    <li id="MySQL">MySQL</li>
-                </ul>
-            </div>
+        <img src="img/Raiden.png" alt="MyImage">
 
-            <div class="cards">
-                <h3 class="SubTitle">Hobbies:</h3>
-                <ul>
-                    <li id="Videogames">Videogames</li>
-                    <li id="Series">Series</li>
-                </ul>
-            </div>
+        <div class="cards">
+            <h3 class="SubTitle">Technologies:</h3>
+            <ul class="list-presentation">
+                <li>Python</li>
+                <li>C</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>UNIX</li>
+                <li>Windows</li>
+                <li>MySQL</li>
+            </ul>
+        </div>
 
-            <button>Download CV</button>
+        <div class="cards">
+            <h3 class="SubTitle">Hobbies:</h3>
+            <ul class="list-presentation">
+                <li>Videogames</li>
+                <li>Series</li>
+            </ul>
+        </div>
 
-            <div class="cards">
-                <h2>My Social Networks</h2>
-                <div>
-                    <a href=""><img src="img/twitter-Mark.png" alt="Twitter" class="SocialNetwork"></a>
-                    <a href=""><img src="img/instagram-Mark.png" alt="Instagram" class="SocialNetwork"></a>
-                    <a href="https://github.com/Destructor266"><img src="img/GitHub-Mark.png" alt="Github" class="SocialNetwork"></a>
-                </div>
-            </div>
+        <button>Download CV</button>
 
-        </section>
+        <div class="cards">
+            <h2>My Social Networks</h2>
+            <ul>
+                <li><a href=""><img src="img/twitter-Mark.png" alt="Twitter" class="SocialNetwork"></a></li>
+                <li><a href=""><img src="img/instagram-Mark.png" alt="Instagram" class="SocialNetwork"></a></li>
+                <li><a href="https://github.com/Destructor266"><img src="img/GitHub-Mark.png" alt="Github"
+                            class="SocialNetwork"></a></li>
+            </ul>
+        </div>
+    </section>
 
-        <section id="MyRepos">
-            <h2 class="Title">My Repos</h2>
-            <article class="Repo">
-                <a href="https://github.com/Destructor266/RequestChuckNorrisAPI">
-                    <img src="img/chuck-norris610_ebeb.jpg" alt="RequestChuckNorrisAPI">
-                    <p class="TextRepo">RequestChuckNorrisAPI</p>
-                </a>
-            </article>
-        </section>
+    <section id="MyRepos">
+        <h2 class="Title">My Repos</h2>
+        <article class="Repo">
+            <img src="img/chuck-norris610_ebeb.jpg" alt="RequestChuckNorrisAPI">
+            <a href="https://github.com/Destructor266/RequestChuckNorrisAPI">
+                <p class="TextRepo">RequestChuckNorrisAPI</p>
+            </a>
+        </article>
+    </section>
 
-    </main>
+    <section id="forms">
+        <div class="container">
+            <h2 class="Title">Contact Me</h2>
+            <form action="form.php" method="post">
+                <fieldset>
+                    <label for="Email">Enter your email</label>
+                    <input type="text" name="Email" id="EmailInput" required>
+                    <textarea name="Message" id="MessageTextArea" required>Your message goes here</textarea>
+                    <button>Submit</button>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+
 
     <footer>
-        <h2 class="Title">Contact Me</h2>
-        <section id="forms">
-            <form action="form.php">
-                <label for="Email">Enter your email</label>
-                <input type="text" name="Email" id="EmailInput" required>
-                <textarea name="Message" id="MessageTextArea" cols="30" rows="10" required>Your message goes here</textarea>
-                <button>Submit</button>  
-            </form>  
-        </section>
-
         <section id="authors">
-          <section>&copy; 2021 - Manel Jarrega</section>
+            <section>&copy; 2021 - Manel Jarrega</section>
         </section>
-
     </footer>
 
     <script src="js/scripts.js"></script>
 
 </body>
+
 </html>
